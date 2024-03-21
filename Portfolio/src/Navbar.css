@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherish&family=Lobster&family=Shojumaru&family=The+Nautigal:wght@400;700&display=swap');
+
+.navigation {
+    width: 100vw;
+    height: 100px;
+    /*background-color:rgb(5, 8, 22) ;*/
+    background: transparent;
+    position: fixed;
+    color: white;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    z-index: 100;
+
+}
+
+.logo h1 {
+    font-family: "Shojumaru", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo , .choose {
+    margin: 0px 50px 0px 50px;
+}
+
+.choose ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    height: 50px;
+}
+
+
+.choose ul li {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+.choose ul li:nth-child(1) {
+    background-color: rgba(255, 255, 255, .15); 
+}
+
+#nav-bttn:hover{
+    background-color: rgba(255, 255, 255, .15); 
+    transition: ease-in-out .2s;
+}
+
+
