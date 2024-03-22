@@ -1,0 +1,22 @@
+
+
+.page2 {
+    width: 100vw;
+    height: 100vh;
+    /* background: rgba(5, 8,22, 1); */
+    background: red;
+    position: absolute;
+    top: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.edubox {
+    width: 70vw;
+    height: 90vh;
+    background: white;
+    border-radius: 20px;
+
+}

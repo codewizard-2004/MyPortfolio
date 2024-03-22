@@ -9,8 +9,7 @@
     width: 100vw;
     height: 100vh;
     background-color: blue;
-    box-sizing: border-box;
-    position: relative;
+    overflow-y: hidden;
 }
 
 
@@ -27,6 +26,7 @@
     height: 300px;
     border-radius: 100%;
     transition: .2s ease-in-out;
+    border: 10px solid rgba(102, 63,192, 1);
 }
 
 .amal:hover {
