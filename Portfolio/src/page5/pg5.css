@@ -98,6 +98,8 @@
 #sentbttn {
     color: white;
     text-decoration: none;
+    background:none;
+    border: none;
 }
 
 .bttn-box:hover{

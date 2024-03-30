@@ -7,6 +7,8 @@ import Insta from '../assets/images/insta.jpg'
 import Twitt from '../assets/images/xicon.jpg'
 import Git from '../assets/images/github.jpg'
 import Linked from '../assets/images/LinkedIn.png'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Page5() {
 
@@ -38,7 +40,25 @@ export default function Page5() {
         })
     },[])
 
+    const notify = () => toast('🦄Thanku for contacting me',{
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light"
+        });
+
+//template_xp8vvan
+
+//service_xzt017r
+
+//d6RYe1ivHySp0Qa5P
+
   return (
+    
     <div className='page5'>
         <div className="contact-txt">
             <h1>CONTACT ME</h1>
@@ -52,7 +72,8 @@ export default function Page5() {
                         <input className='namebox' id='textbox' type="text" placeholder='Enter Your Email Address'/>
                         <textarea name="messagebox" id="messagebox" rows="10"placeholder='Please Write your message'></textarea>
                         <div className="bttn-box">
-                            <a href="#" id='sentbttn'>Send</a>
+                            <button id='sentbttn' onClick={notify}>Send</button>
+                            
                         </div>
                     </div>
                     <div className="socials">
@@ -62,12 +83,11 @@ export default function Page5() {
                         <a href="https://github.com/codewizard-2004" target='_blank'  id='social-img4'><img src={Git} alt="" /></a>
                     </div>
                 </div>
-                
+            <ToastContainer/>
             </div>
             <div className="canvas"></div>
-            
+           
         </div>
-      
     </div>
   )
 }
