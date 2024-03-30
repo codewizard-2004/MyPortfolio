@@ -8,7 +8,6 @@
 .page1 {
     width: 100vw;
     height: 100vh;
-    background-color: blue;
     overflow-y: hidden;
 }
 
@@ -80,7 +79,7 @@
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgba(102, 63,192, 1);
+    color: #a9354a;
     transform: translateZ(20px);
 }
 

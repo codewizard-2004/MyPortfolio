@@ -1,0 +1,122 @@
+.page5 {
+    position: absolute;
+    height: 100vh;
+    top: 530vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-txt {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 20px;
+}
+.contact-txt h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.contact-txt h2{
+    font-weight: lighter;
+    font-style: italic;
+}
+
+
+.connect{
+    display: flex;
+}
+.canvas{
+    width: 50%;
+    height: 80vh;
+}
+.mail {
+    width: 50%;
+}
+
+.emailbox{
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 4px 30px rgba(226, 223, 223, 0.045);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255,0.5);
+    border-left: 1px solid rgba(255, 255, 255,0.5);
+    display: flex;
+}
+
+#textbox {
+    width: 80%;
+    height: 50px;
+    margin: 20px 0px 10px 20px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    background: rgba(255, 255, 255, 0.56);
+    box-shadow: 0 4px 30px rgba(226, 223, 223, 0.045);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255,0.5);
+    border-left: 1px solid rgba(255, 255, 255,0.5);
+    box-sizing: border-box;
+}
+
+#messagebox{
+    width: 80%;
+    margin: 10px 0px 0px 20px;
+    background: rgba(255, 255, 255, 0.56);
+    box-shadow: 0 4px 30px rgba(226, 223, 223, 0.045);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255,0.5);
+    border-left: 1px solid rgba(255, 255, 255,0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    resize: vertical;
+
+}
+
+.bttn-box{
+    margin: 15px 10px 0px 40%;
+    border-radius: 10px;
+    font-size: larger;
+    border: 1px solid #00e759;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    
+
+}
+
+#sentbttn {
+    color: white;
+    text-decoration: none;
+}
+
+.bttn-box:hover{
+    background-color: rgba(255, 255, 255, .15); 
+    transition: ease-in-out .2s;
+}
+
+
+.socials{
+    display: flex;
+    flex-direction: column;
+}
+
+.socials img {
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+

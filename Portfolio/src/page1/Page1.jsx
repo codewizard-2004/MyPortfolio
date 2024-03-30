@@ -1,15 +1,14 @@
 import React from 'react'
 import "./pg1.css"
 import Amal from '../assets/images/amal.jpg'
-import background from './bg.png'
 import Typewriter from 'typewriter-effect';
 import VanillaTilt from 'vanilla-tilt'
 import { useRef, useEffect } from 'react';
 
+
 export default function Page1() {
 
   const tiltRef = useRef(null);
-  const tiltRef2 = useRef(null);
 
   useEffect(() => {
     // Access the DOM element using the ref
@@ -29,7 +28,6 @@ export default function Page1() {
   return (
     <div>
       <section className="page1">
-        <img src={background} alt="" id='back'/>
         <img src={Amal} alt="" className='amal' />
 
         <div className="info-text" ref={tiltRef}>

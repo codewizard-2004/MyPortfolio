@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+import {useGSAP} from "@gsap/react"
+import Logo from './assets/images/logo.jpg'
 
 export default function Navbar() {
   
@@ -10,6 +13,20 @@ export default function Navbar() {
   let exp = document.querySelector('.exp-bttn');
   let cont = document.querySelector('.contact-bttn');
 
+  useGSAP(()=>{
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".navigation",{
+      scrollTrigger: {
+          trigger: ".navigation" ,
+          toggleActions:"play none none reverse" ,
+          start:"50px"
+      },
+      background: "#0a121d",
+      duration: .2,
+      ease: true
+  })
+  },[])
+
 
 
 
@@ -17,8 +34,9 @@ export default function Navbar() {
   return (
     <div>
       <section className="navigation">
-        <div className="logo">
-            <h1>AMAL.VARGHESE</h1>
+        <div className="amal-logo">
+            <img src={Logo} alt="" />
+            <h1>amal.varghese</h1>
         </div>
         <div className="choose">
           <ul>

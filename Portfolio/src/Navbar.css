@@ -2,7 +2,7 @@
 
 .navigation {
     width: 100vw;
-    height: 100px;
+    height: 60px;
     /*background-color:rgb(5, 8, 22) ;*/
     background: transparent;
     position: fixed;
@@ -14,14 +14,26 @@
 
 }
 
-.logo h1 {
+.amal-logo h1 {
     font-family: "Shojumaru", system-ui;
     font-weight: 400;
     font-style: normal;
+    margin-top: 15px;
 }
 
-.logo , .choose {
+.amal-logo , .choose {
     margin: 0px 50px 0px 50px;
+}
+
+
+.amal-logo img {
+    width: 60px;
+    border-radius: 100%;
+}
+
+.amal-logo {
+    display: flex;
+    text-align: center;
 }
 
 .choose ul{
@@ -42,10 +54,6 @@
     justify-content: center;
     
    
-}
-
-.choose ul li:nth-child(1) {
-    background-color: rgba(255, 255, 255, .15); 
 }
 
 #nav-bttn:hover{
