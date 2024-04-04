@@ -121,3 +121,15 @@
 .tag3{
     color: #3989bd;
 }
+
+@media only screen and (max-width:600px) {
+
+    .page3{
+        top: 250px;
+    }
+
+    .ptitle h1{
+        font-size: 20px;
+    }
+    
+}

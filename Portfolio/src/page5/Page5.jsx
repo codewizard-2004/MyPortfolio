@@ -71,7 +71,7 @@ export default function Page5() {
                         <input className='namebox' id='textbox' type="text" placeholder='Enter Your Name'/>
                         <input className='namebox' id='textbox' type="text" placeholder='Enter Your Email Address'/>
                         <textarea name="messagebox" id="messagebox" rows="10"placeholder='Please Write your message'></textarea>
-                        <div className="bttn-box">
+                        <div className="bttn-box" onClick={notify}>
                             <button id='sentbttn' onClick={notify}>Send</button>
                             
                         </div>

@@ -108,34 +108,34 @@ export default function Page2() {
                         </div>
                     </div>
                     <div className="postmetric" id='card' ref={tiltRef2}>
-                    <div className="logo">
-                        <img src={gvps} alt="" />
-                    </div>
-                        <div className="name">
-                            Greenvalley Public School, Kothamangalam
+                        <div className="logo">
+                            <img src={gvps} alt="" />
                         </div>
-                        <div className="uni">CBSE</div>
-                        <div className="time">2022</div>
-                        <div className="status">12th Grade</div>
-                        <div className="course">Computer Maths</div>
-                        
-                        <div className="score">Score: 95%</div>
-                        <div className="link">
-                            <a href="https://drive.google.com/file/d/140TgVp1bBKGKvo0vJivciUS6Q92dD0nr/view?usp=sharing" target='_blank'>Certificate</a>
+                            <div className="name">
+                                Greenvalley Public School, Kothamangalam
+                            </div>
+                            <div className="uni">CBSE</div>
+                            <div className="time">2022</div>
+                            <div className="status">12th Grade</div>
+                            <div className="course">Computer Maths</div>
+
+                            <div className="score">Score: 95%</div>
+                            <div className="link">
+                                <a href="https://drive.google.com/file/d/140TgVp1bBKGKvo0vJivciUS6Q92dD0nr/view?usp=sharing" target='_blank'>Certificate</a>
+                            </div>
                         </div>
-                    </div>
                     <div className="btech" id='card' ref={tiltRef3}>
-                    <div className="logo">
-                        <img src={Mec} alt="" />
-                    </div>
-                        <div className="name">
-                            Model Engineering College, Trikkakara
+                        <div className="logo">
+                            <img src={Mec} alt="" />
                         </div>
-                        <div className="uni">KTU</div>
-                        <div className="time">2023-2027</div>
-                        <div className="status">Bachelor of Technology</div>
-                        <div className="course">Computer Science Engineering</div>
-                        <div className="score">Score: NA</div>   
+                            <div className="name">
+                                Model Engineering College, Trikkakara
+                            </div>
+                            <div className="uni">KTU</div>
+                            <div className="time">2023-2027</div>
+                            <div className="status">Bachelor of Technology</div>
+                            <div className="course">Computer Science Engineering</div>
+                            <div className="score">Score: NA</div>   
                     </div>
                 </div>
             </div>

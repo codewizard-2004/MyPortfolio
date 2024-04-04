@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Page1 from './page1/Page1.jsx'
 import Navbar from './Navbar.jsx'
@@ -10,6 +10,10 @@ import Page5 from './page5/Page5.jsx'
 
 
 function App() {
+
+  useEffect(()=>{
+    document.title = "Amal Varghese"
+   },[])
 
   return (
     <>

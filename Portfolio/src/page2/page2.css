@@ -4,7 +4,7 @@
     width: 100vw;
     height: 100vh; 
     position: absolute;
-    top: 100vh;
+    top: 120vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +19,7 @@
     border-left: 1px solid rgba(255, 255, 255,0.5);
     /* background: rgba(255, 255, 255, 0.056); */
     background: rgba(16, 13,37, 0.9);
-    box-shadow: 0 4px 30px rgb(226, 223, 223);
+    /* box-shadow: 0 4px 30px rgb(226, 223, 223); */
     backdrop-filter: blur(5px);
     transform-style: preserve-3d;
     color: white;
@@ -68,7 +68,6 @@
     text-align: center;
     width: 300px;
     margin-left: 30px;
-    flex-wrap: wrap;
 }
 
 
@@ -115,4 +114,41 @@
     text-decoration: none;
 }
 
+
+@media only screen and (max-width:600px) {
+
+    .educards{
+        top: 100px;
+        height: 130vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title h1{
+        font-size: 20px;
+    }
+    .title{
+        height: 100px;
+    }
+    
+    #card{
+        width: 250px;
+        height: 350px;
+    }
+
+    .logo img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .edubox{
+        height: 140vh;
+        width: 100vw;
+    }
+
+    .page2 {
+        height: 140vh;
+        width: 120vw;
+    }
+}
 
