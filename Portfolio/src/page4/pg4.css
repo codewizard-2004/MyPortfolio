@@ -1,7 +1,7 @@
 .page4 {
     width: 100vw;
     position: absolute;
-    top: 300vh;
+    top: 310vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -25,12 +25,21 @@
 .work {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
-#work-box {
+.work-card {
     display: flex;
-
+    flex-direction: column;
+    gap: 50px;
 
 }
+
+#work-card123 {
+    display: flex;
+}
+
+
+
 .desc{
     height: 400px;
     width: 500px;
@@ -44,9 +53,6 @@
     text-align: center;
 }
 
-.desc:hover {
-    box-shadow: 0 4px 30px rgb(226, 223, 223);
-}
 
 .linet{
     height: 450px;
@@ -70,19 +76,6 @@
 	border-bottom: 10px solid transparent;
 }
 
-.triangle-left {
-	width: 0;
-	height: 0;
-    position: relative;
-    top: 40px;
-	border-top: 10px solid transparent;
-	border-right: 15px solid #555;
-	border-bottom: 10px solid transparent;
-}
-
-.work2 {
-    margin-left: 14px;
-}
 
 .logo-circle {
     position: relative;
@@ -95,4 +88,15 @@
 }
 .work2{
     margin-left: 15px;
+}
+
+
+@media only screen and (max-width:320px) {
+    .page4{
+        top: 470vh;
+    }
+
+
+
+
 }

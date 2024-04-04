@@ -122,3 +122,10 @@
 }
 
 
+@media only screen and (max-width:320px) {
+
+    .page5{
+        top: 790vh;
+    }
+}
+

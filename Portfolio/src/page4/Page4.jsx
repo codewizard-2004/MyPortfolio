@@ -22,13 +22,13 @@ export default function Page4() {
 
 useGSAP(()=>{
     gsap.registerPlugin(ScrollTrigger);
-    gsap.from("#desc2",{
+    gsap.from(".work2",{
     scrollTrigger: {
-      trigger: "#desc2",
+      trigger: ".work2",
       toggleActions:"play none none reverse" ,
       start: "70px 80%"
   },
-  x: 600,
+  x: -600,
   duration: 1,
   ease: true
     })
@@ -55,35 +55,22 @@ useGSAP(()=>{
           <h2>What I've done so far..</h2>
         </div>
         <div className="work">
-          <div className="work1" id='work-box'>
-            <div className="desc" id='desc1'>Not Yet </div>
-            <div className="triangle-right" id='tr1'></div>
-            
-            <div className="linet">
-              
+          <div className="work-card">
+            <div className="work-card1" id='work-card123'>
+              <div className="desc"></div>
+              <div className="triangle-right"></div>
             </div>
-            <div className="logo-circle"></div>
-            <div className="timeline"></div>
-          </div>
-
-          <div className="work2" id='work-box'>
-            <div className="timeline"></div>
-            <div className="linet"></div>
-            <div className="logo-circle"></div>
-            <div className="triangle-left"></div>
-            <div className="desc" id='desc2'> Soon</div>
-          </div>
-
-          <div className="work1" id='work-box'>
-            <div className="desc" id='desc3'></div>
-            <div className="triangle-right"></div>
-            
-            <div className="linet">
-              
+            <div className="work-card1" id='work-card123'>
+              <div className="desc"></div>
+              <div className="triangle-right"></div>
             </div>
-            <div className="logo-circle"></div>
-            <div className="timeline"></div>
+            <div className="work-card1" id='work-card123'>
+              <div className="desc"></div>
+              <div className="triangle-right"></div>
+            </div>
           </div>
+          <div className="main-line"></div>
+  
         </div>
       
     </div>

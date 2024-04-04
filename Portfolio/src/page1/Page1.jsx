@@ -41,7 +41,7 @@ export default function Page1() {
    
 
   return (
-    <div>
+
       <section className="page1">
         <img src={Amal} alt="" className='amal' />
 
@@ -104,6 +104,5 @@ export default function Page1() {
 
 
       </section>
-    </div>
   )
 }
