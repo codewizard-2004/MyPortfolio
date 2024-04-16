@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './pg3.css'
 import Protego from './projects/protego.png'
 import Y2MP3 from './projects/youtube.ico'
@@ -25,6 +25,19 @@ export default function Page3() {
       ease: true
         })
     },[])
+
+    useEffect(()=>{
+        var windowWidth = window.innerWidth;
+        console.log(windowWidth)
+        if (windowWidth<320) {
+            console.log("h")
+            var scrollbar = document.querySelector(".card-list");
+            var totalLength = scrollbar.scrollWidth;
+            scrollbar.scrollLeft(totalLength/2)
+        }
+
+    })
+    
 
   return (
     <div className='page3'>
@@ -99,4 +112,6 @@ export default function Page3() {
       
     </div>
   )
+
+  
 }

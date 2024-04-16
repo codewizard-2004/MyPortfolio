@@ -1,12 +1,16 @@
 .page4 {
-    width: 100vw;
     position: absolute;
-    top: 310vh;
+    top: 320vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    overflow-y: hidden;
+}
+
+.sm{
+    display: none;
 }
 
 .wtext h1{
@@ -24,15 +28,46 @@
 
 .work {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
 }
 .work-card {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 100px;
 
 }
+
+.main-line-circle{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+}
+
+.main-line{
+    width: 5px;
+    height: 220vh;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 65vh;
+    position: absolute;
+
+}
+
+.main-circle {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 180px;
+}
+
 
 #work-card123 {
     display: flex;
@@ -42,7 +77,7 @@
 
 .desc{
     height: 400px;
-    width: 500px;
+    width: 300px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.16);
     box-shadow: 0 4px 30px rgba(226, 223, 223, 0.045);
@@ -53,19 +88,6 @@
     text-align: center;
 }
 
-
-.linet{
-    height: 450px;
-    width: 3px;
-    background-color: white;
-    position: relative;
-    left: 40px;
-}
-.timeline {
-    height: 400px;
-    width: 500px;
-}
-
 .triangle-right {
     position: relative;
     top: 40px;
@@ -73,6 +95,14 @@
 	height: 0;
 	border-top: 10px solid transparent;
 	border-left: 15px solid #555;
+	border-bottom: 10px solid transparent;
+}
+
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-right: 15px solid #555;
 	border-bottom: 10px solid transparent;
 }
 
@@ -86,14 +116,109 @@
     border-radius: 100%;
     background-color: white;
 }
-.work2{
-    margin-left: 15px;
+
+.lg {
+    width: 100vw;
+    height: 240vh;
+    overflow-y: hidden;
 }
+
+.lg .wtext{
+    text-align: center;
+}
+
+.lg .work {
+    width: 100vw;
+}
+
+
+
+.partl {
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.partl .desc , .partr .desc{
+    width: 500px;
+    height: 500px;
+}
+
+.partl .work-card {
+    justify-content: center;
+    align-items: end;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+.partl .triangle-right{
+    top: -400px;
+}
+
+.timeline {
+    width: 500px;
+    height: 500px;
+}
+
+.lg .main-line {
+    height: 240vh;  
+}
+
+.lg .circle-container{
+    position: relative;
+    right: 35px;
+    top: -300px;
+    display: flex;
+    gap: 430px;
+}
+.linepart {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partr {
+    width: 45%;
+}
+
+.partr .work-card {
+    flex-direction: row;
+    gap: 0px;
+}
+
+.partr .triangle-left{
+    margin-top: 80px;
+}
+
+@media only screen and (max-width:426px) {
+    .page4{
+        top: 470vh;
+    }
+    .sm {
+        display: block;
+    }
+    .lg {
+        display: none;
+    }
+
+
+
+
+}
+
 
 
 @media only screen and (max-width:320px) {
     .page4{
         top: 470vh;
+    }
+    .sm {
+        display: block;
+    }
+    .lg {
+        display: none;
     }
 
 

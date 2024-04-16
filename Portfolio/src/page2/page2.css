@@ -24,6 +24,7 @@
     transform-style: preserve-3d;
     color: white;
     overflow-y: hidden;
+    
 
 }
 
@@ -114,15 +115,13 @@
     text-decoration: none;
 }
 
-
-@media only screen and (max-width:320px) {
-
-
+@media only screen and (max-width:426px) {
     .educards{
         top: 100px;
         height: 180vh;
         align-items: center;
         justify-content: center;
+        overflow-y: hidden;
     }
 
     .title h1{
@@ -135,6 +134,53 @@
     #card{
         width: 250px;
         height: 350px;
+        margin-left: 0px;
+    }
+
+    .logo img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .edubox{
+        height: 200vh;
+        overflow-y: hidden;
+    }
+
+    .page2 {
+        top: 150vh;
+        height: 200vh;
+        overflow-y: hidden;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width:320px) {
+
+
+    .educards{
+        top: 100px;
+        height: 180vh;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
+    }
+
+    .title h1{
+        font-size: 20px;
+    }
+    .title{
+        height: 100px;
+    }
+    
+    #card{
+        width: 250px;
+        height: 350px;
+        margin-left: 0px;
     }
 
     .logo img{
@@ -145,12 +191,13 @@
     .edubox{
         height: 200vh;
         width: 100vw;
+        overflow-y: hidden;
     }
 
     .page2 {
         top: 150vh;
         height: 200vh;
-        width: 120vw;
+        overflow-y: hidden;
     }
 }
 

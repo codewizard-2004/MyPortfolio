@@ -58,7 +58,8 @@ export default function Page5() {
 //d6RYe1ivHySp0Qa5P
 
   return (
-    
+  
+
     <div className='page5'>
         <div className="contact-txt">
             <h1>CONTACT ME</h1>
@@ -85,9 +86,10 @@ export default function Page5() {
                 </div>
             <ToastContainer/>
             </div>
-            <div className="canvas"></div>
+            
            
         </div>
     </div>
+
   )
 }

@@ -1,11 +1,12 @@
 .page5 {
     position: absolute;
     height: 100vh;
-    top: 530vh;
+    top: 600vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
 }
+
 
 .contact-txt {
     display: flex;
@@ -121,11 +122,40 @@
     border-radius: 10px;
 }
 
+@media only screen and (max-width:426px) {
+
+    .page5{
+        top: 750vh;
+
+    }
+    .mail {
+        width: 100%;
+    }
+    .emailbox{
+        width: 100%;
+    }
+    .socials{
+        width: 100px;
+    }
+
+}
 
 @media only screen and (max-width:320px) {
 
     .page5{
-        top: 790vh;
+        top: 750vh;
+        width: 140vw;
+
     }
+    .mail {
+        width: 140vw;
+    }
+    .emailbox{
+        width: 120vw;
+    }
+    .socials{
+        width: 100px;
+    }
+
 }
 

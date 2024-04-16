@@ -124,11 +124,8 @@
     width: 60px;
 }
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:426px){
 
-    .page1 {
-        width: 120vw;
-    }
 
     .info-text{
         position: absolute;
@@ -153,5 +150,46 @@
         width: 70vw;
         top: 90vh;
     }
+
+    #tool {
+        width: 60px;
+    }
     
 }
+
+@media only screen and (max-width:320px) {
+
+    *{
+        width: 100%;
+    }
+
+    .page1 {
+        width: 140vw;
+    }
+
+    .info-text{
+        position: absolute;
+        left: 60px;
+        top: 100px;
+        width: 270px;
+        height: 240px;
+        font-size: 20px;
+        overflow-y: hidden;
+    }
+
+    .amal {
+        width: 200px;
+        height: 200px;
+        top: 350px;
+        left: 100px;
+    }
+
+    .tool-box {
+        gap: 15px;
+        width: 70vw;
+        top: 90vh;
+    }
+    
+}
+
+
