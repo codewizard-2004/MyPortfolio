@@ -16,7 +16,7 @@ const ParticleComponent = () => {
       // starting from v2 you can add only the features you need reducing the bundle size
       //await loadAll(engine);
       //await loadFull(engine);
-      await loadAll(engine);
+      await loadSlim(engine);
       //await loadBasic(engine);
     }).then(() => {
       setInit(true);
@@ -32,7 +32,7 @@ const ParticleComponent = () => {
       "autoPlay": true,
       "background": {
         "color": {
-          "value": "#17163e"
+          "value": "#000000"
         },
         "image": "",
         "position": "",
@@ -74,8 +74,8 @@ const ParticleComponent = () => {
             "type": "circle"
           },
           "onHover": {
-            "enable": true,
-            "mode": "light",
+            "enable": false,
+            "mode": [],
             "parallax": {
               "enable": false,
               "force": 2,
@@ -163,17 +163,17 @@ const ParticleComponent = () => {
             "area": {
               "gradient": {
                 "start": {
-                  "value": "3b5e98"
+                  "value": "#ffffff"
                 },
                 "stop": {
-                  "value": "#17163e"
+                  "value": "#000000"
                 }
               },
               "radius": 1000
             },
             "shadow": {
               "color": {
-                "value": "#17163e"
+                "value": "#000000"
               },
               "length": 2000
             }
@@ -192,7 +192,7 @@ const ParticleComponent = () => {
         },
         "collisions": {
           "absorb": {
-            "speed": 2
+            "speed": 1
           },
           "bounce": {
             "horizontal": {
@@ -211,12 +211,12 @@ const ParticleComponent = () => {
           }
         },
         "color": {
-          "value": "#ff0000",
+          "value": "#fff",
           "animation": {
             "h": {
               "count": 0,
-              "enable": true,
-              "speed": 20,
+              "enable": false,
+              "speed": 1,
               "decay": 0,
               "delay": 0,
               "sync": true,
@@ -248,11 +248,44 @@ const ParticleComponent = () => {
           "options": {},
           "type": []
         },
-        "groups": {},
+        "groups": {
+          "z5000": {
+            "number": {
+              "value": 70
+            },
+            "zIndex": {
+              "value": 50
+            }
+          },
+          "z7500": {
+            "number": {
+              "value": 30
+            },
+            "zIndex": {
+              "value": 75
+            }
+          },
+          "z2500": {
+            "number": {
+              "value": 50
+            },
+            "zIndex": {
+              "value": 25
+            }
+          },
+          "z1000": {
+            "number": {
+              "value": 40
+            },
+            "zIndex": {
+              "value": 10
+            }
+          }
+        },
         "move": {
           "angle": {
             "offset": 0,
-            "value": 90
+            "value": 10
           },
           "attract": {
             "distance": 200,
@@ -270,7 +303,7 @@ const ParticleComponent = () => {
           },
           "decay": 0,
           "distance": {},
-          "direction": "none",
+          "direction": "right",
           "drift": 0,
           "enable": true,
           "gravity": {
@@ -296,7 +329,8 @@ const ParticleComponent = () => {
           },
           "random": false,
           "size": false,
-          "speed": 6,
+          //This is it
+          "speed": 2,
           "spin": {
             "acceleration": 0,
             "enable": false
@@ -312,7 +346,7 @@ const ParticleComponent = () => {
         },
         "number": {
           "density": {
-            "enable": true,
+            "enable": false,
             "width": 1920,
             "height": 1080
           },
@@ -320,7 +354,7 @@ const ParticleComponent = () => {
             "mode": "delete",
             "value": 0
           },
-          "value": 30
+          "value": 200
         },
         "opacity": {
           "value": 1,
@@ -352,20 +386,14 @@ const ParticleComponent = () => {
           "close": true,
           "fill": true,
           "options": {},
-          "type": [
-            "circle",
-            "square"
-          ]
+          "type": "circle"
         },
         "size": {
-          "value": {
-            "min": 15,
-            "max": 30
-          },
+          "value": 1,
           "animation": {
             "count": 0,
             "enable": false,
-            "speed": 5,
+            "speed": 1,
             "decay": 0,
             "delay": 0,
             "sync": false,
@@ -378,8 +406,8 @@ const ParticleComponent = () => {
           "width": 0
         },
         "zIndex": {
-          "value": 0,
-          "opacityRate": 1,
+          "value": 5,
+          "opacityRate": 0.5,
           "sizeRate": 1,
           "velocityRate": 1
         },
@@ -389,12 +417,12 @@ const ParticleComponent = () => {
           "split": {
             "count": 1,
             "factor": {
-              "value": 3
+              "value": 1
             },
             "rate": {
               "value": {
-                "min": 4,
-                "max": 9
+                "min": 2,
+                "max": 5
               }
             },
             "sizeOffset": true,
@@ -459,8 +487,8 @@ const ParticleComponent = () => {
         "rotate": {
           "value": 0,
           "animation": {
-            "enable": true,
-            "speed": 5,
+            "enable": false,
+            "speed": 0,
             "decay": 0,
             "sync": false
           },
@@ -523,7 +551,35 @@ const ParticleComponent = () => {
       "style": {},
       "themes": [],
       "zLayers": 100,
-      "emitters": [],
+      "emitters": {
+        "autoPlay": true,
+        "fill": true,
+        "life": {
+          "wait": false
+        },
+        "rate": {
+          "quantity": 1,
+          "delay": 7
+        },
+        "shape": {
+          "options": {},
+          "replace": {
+            "color": false,
+            "opacity": false
+          },
+          "type": "square"
+        },
+        "startCount": 0,
+        "size": {
+          "mode": "percent",
+          "height": 0,
+          "width": 0
+        },
+        "position": {
+          "x": -5,
+          "y": 55
+        }
+      },
       "motion": {
         "disable": false,
         "reduce": {
