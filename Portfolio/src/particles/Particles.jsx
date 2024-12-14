@@ -1,30 +1,26 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadAll } from "@tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
-import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
-// import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
+import { loadSlim } from "@tsparticles/slim"; // Ensure you install the "@tsparticles/slim" package.
 
 const ParticleComponent = () => {
   const [init, setInit] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false); // Track loading state
 
-  // this should be run only once per application lifetime
+  // Initialize particles engine
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-      // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-      // starting from v2 you can add only the features you need reducing the bundle size
-      //await loadAll(engine);
-      //await loadFull(engine);
-      await loadSlim(engine);
-      //await loadBasic(engine);
+      console.log("Loading started")
+      await loadSlim(engine); // Load necessary features
     }).then(() => {
-      setInit(true);
+      setInit(true); // Mark engine initialization as complete
     });
   }, []);
 
+  // Called when particles finish loading
   const particlesLoaded = (container) => {
-    console.log(container);
+    console.log("Loading complete");
+    setIsLoaded(true); // Mark particles as loaded
+
   };
 
   const options = useMemo(
@@ -591,17 +587,18 @@ const ParticleComponent = () => {
     [],
   );
 
-  if (init) {
-    return (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-      />
-    );
-  }
-
-  return <></>;
+  return (
+    <>
+      {!isLoaded && <div>Loading...</div>} {/* Display loading indicator */}
+      {init && (
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options} // Use your own `options`
+        />
+      )}
+    </>
+  );
 };
 
 export default ParticleComponent;
